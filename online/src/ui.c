@@ -191,8 +191,7 @@ static void page(sock_t s)
                  "<h1>XB Online</h1><p>Signed in as <b>%s</b>.</p>"
                  "<p>Back out of the game's account list and open it again. "
                  "The gamertag is already on the disk the game reads.</p>"
-                 "<form method=post action=/signout><button>Sign out</button></form>"
-                 "<p style=\"color:#8a8\">Insignia support is coming soon.</p></body>",
+                 "<form method=post action=/signout><button>Sign out</button></form></body>",
                  acct.gamertag);
         reply(s, "200 OK", body);
         return;
@@ -203,16 +202,15 @@ static void page(sock_t s)
              "<!doctype html><meta charset=utf-8><title>XB Online</title>"
              "<body style=\"font:16px sans-serif;background:#10140f;color:#e8f0e4;margin:40px\">"
              "<h1>Sign in to XB Online</h1>"
-             "<p>Use your Insignia login on xb.live. That signs you in here and lets you play on XB Online.</p>"
+             "<p>Sign in with your XB Online account on xb.live.</p>"
              "<p>Scan this, or open <a style=\"color:#9c6\" href=\"%s\">%s</a> and enter <b>%s</b>.</p>"
              "%s"
              "<p style=\"color:#c96\">%s</p>"
-             "<h2>Or type your Insignia login</h2>"
+             "<h2>Or type your XB Online login</h2>"
              "<form method=post action=/password>"
              "<p>Email<br><input name=email size=32></p>"
              "<p>Password<br><input name=password type=password size=32></p>"
              "<button>Sign in and download the account</button></form>"
-             "<p style=\"color:#8a8\">Insignia support is coming soon.</p>"
              "<p><a style=\"color:#9c6\" href=\"/?refresh=1\">New code</a></p></body>",
              link, link, g_code[0] ? g_code : "----", qr, err);
     reply(s, "200 OK", body);

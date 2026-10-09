@@ -205,7 +205,7 @@ int xbl_signin_password(const char *email, const char *password, char *err, size
     char e_email[96], e_pass[160], body[320], resp[2048], user[48];
     long status = 0;
     if (!email || !email[0] || !password || !password[0]) {
-        set_err(err, err_cap, "Enter the Insignia email and password you use on xb.live.");
+        set_err(err, err_cap, "Enter the XB Online email and password you use on xb.live.");
         return -1;
     }
     json_escape(email, e_email, sizeof(e_email));
@@ -247,7 +247,7 @@ int xbl_signin_device_start(char *user_code, size_t code_cap, char *poll_token, 
         set_err(err, err_cap, "xb.live did not return a sign-in code.");
         return -1;
     }
-    set_err(err, err_cap, "Scan the code, then sign in on xb.live with your Insignia login.");
+    set_err(err, err_cap, "Scan the code, then sign in on xb.live with your XB Online account.");
     return 0;
 }
 

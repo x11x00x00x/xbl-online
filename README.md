@@ -1,6 +1,6 @@
 # XB Online for xboxrecomp
 
-Sign in with your Insignia login on [xb.live](https://xb.live). That account is what you play with on XB Online. Insignia support is coming soon.
+Sign in with your XB Online account on [xb.live](https://xb.live).
 
 This is a library a recompiled game links. It is not part of [xboxrecomp](https://github.com/sp00nznet/xboxrecomp). Clone that toolkit on its own and pull it whenever it updates. Do not copy this code into it.
 
@@ -10,12 +10,12 @@ xboxrecomp already turns `\Device\Harddisk0\Partition0` into `Partition0.img` in
 
 ## Sign-in
 
-On launch, if nobody is signed in, a page opens on this computer. Sign in with the same Insignia login you use on xb.live:
+On launch, if nobody is signed in, a page opens on this computer. Sign in with the XB Online account you use on xb.live:
 
-- Scan the QR code. It opens `https://xb.live/link?code=...`. Approve it while signed into xb.live with that Insignia login. The page then downloads the XB Online account into `Partition0.img`.
+- Scan the QR code. It opens `https://xb.live/link?code=...`. Approve it while signed into xb.live with that XB Online account. The page then downloads the account into `Partition0.img`.
 - Or type that same email and password on the page.
 
-Back out of the game's account list and open it again. You are on XB Online. Insignia support is coming soon.
+Back out of the game's account list and open it again. You are signed in to XB Online.
 
 On Windows, F10 or both stick clicks (L3+R3) opens the page again. The address is also printed as `[xbl] Sign in at ...`.
 

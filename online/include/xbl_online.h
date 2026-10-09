@@ -31,7 +31,7 @@ const char *xbl_online_status(void);
 /* Local page with the xb.live QR code and the password form. */
 const char *xbl_online_signin_url(void);
 
-/* 1 = XB Online, 0 = Insignia (sign-in for Insignia is not available yet). */
+/* Returns 1. This library signs into XB Online. */
 int xbl_online_network(void);
 
 #ifdef __cplusplus
